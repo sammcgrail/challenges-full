@@ -1,0 +1,28 @@
+body {
+  /* Use a "Matrix"-style color scheme. */
+  background-color: #0099CC;
+  color: #00ff00;
+  font-family: arial;
+  font-size: 1.2em;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  /* Wrap the list in a green box. */
+  width: 300px;
+  border: 1px solid #00ff00;
+}
+
+div {
+  /* Wrap the list in a green box. */
+  display: inline-block;
+  align: center;
+}
+
+li {
+  /* Add a bit more spacing between list items. */
+  padding: 5px;
+}

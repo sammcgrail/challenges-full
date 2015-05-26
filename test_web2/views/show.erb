@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Second Page</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+
+  <body>
+    <h1>
+      <%= city_name %>
+    </h1>
+
+    <ul>
+      <% data.each do |page| %>
+        <li>Country: <%= page['country'] %></li>
+        <li>Website: <a href="<%= page['url'] %>"><%= page['url']%></a></li>
+      <% end %>
+    </ul>
+
+    <p><a href="/places">Home</a></p>
+  </body>
+</html>

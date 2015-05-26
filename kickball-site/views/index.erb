@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>League of Cool Kickball Professionals</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+
+  <body>
+    <h1>League Teams</h1>
+      <div class="list">
+        <ul>
+          <% teams.each do |team| %>
+            <li><a href="/teams/<%= team %>"><%= team %></a></li>
+          <% end %>
+        </ul>
+
+        <ul>
+          <% data["Simpson Slammers"].each do |position, player| %>
+            <li><a href="/positions/<%= position %>"><%= position %></a></li>
+          <% end %>
+        </ul>
+      </div>
+   </body>
+</html>
