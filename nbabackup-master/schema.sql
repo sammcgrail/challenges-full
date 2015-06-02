@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS nba;
+
+CREATE TABLE nba (
+  id SERIAL PRIMARY KEY,
+  team VARCHAR(255),
+  player VARCHAR(255),
+  num INTEGER
+);

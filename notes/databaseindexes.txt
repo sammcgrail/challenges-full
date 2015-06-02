@@ -1,0 +1,8 @@
+sanitizing data
+foreign keys
+
+
+garbage in garbage out
+
+
+defensive design - 

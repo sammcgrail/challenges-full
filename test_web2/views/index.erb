@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Page</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+
+  <body>
+    <h1>Test Page</h1>
+
+    <ul>
+      <% places['city'].each do |place_name| %>
+        <li><a href="/places/<%= place_name %>"><%= place_name %></a></li>
+      <% end %>
+    </ul>
+
+    <div class="test">
+      <form action="/places/new" method="post">
+        <label for="city">City: </label>
+        <input type="text" id="city" name="city" placeholder: "place">
+
+        <label for="country">Country: </label>
+        <input type="text" id="country" name="country" placeholder: "country">
+
+        <label for="url">Url: </label>
+        <input type="url" id="url" name="url" placeholder: "url">
+
+        <input type="submit">
+      </form>
+    </div>
+    <a href="/">Refresh</a>
+  </body>
+</html>

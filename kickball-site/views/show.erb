@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>League</title>
+    <link rel="stylesheet" href="/home.css">
+  </head>
+
+  <body>
+    <h1>
+      Team: <%= names %>
+    </h1>
+      <div class="list">
+        <ol>
+          <% data.each do |team, info| %>
+            <% info.each do |player, position| %>
+              <% if team == params[:team_name] %>
+               <li><%= "#{player}: #{position}" %></li>
+              <% end %>
+            <% end %>
+          <% end %>
+        </ol>
+      </div>
+    <a href="/teams">All Teams</a>
+  </body>
+</html>

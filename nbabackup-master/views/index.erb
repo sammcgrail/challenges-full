@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grocery List 2</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/foundation.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/vendor/modernizr.js"></script>
+  </head>
+
+  <body>
+    <h1>Grocery List 2</h1>
+
+    <table>
+      <tr><td>Item</td> <td>Type</td><td>Amount</td><tr>
+      <% nba_list.each do |nba| %>
+      <tr>
+      <td><%= nba["team"] %></td>
+      <td><%= nba["player"] %></td>
+      <td><%= nba["num"]%></td>
+
+      </tr>
+      <% end %>
+    </table>
+
+    <form action="/groceries" method="post">
+      <label for="item">Add New Item:</label>
+      <input type="text" id="item" name="item">
+      <input type="submit">
+    </form>
+
+    <a href="/groceries">Redirect link</a>
+
+  </body>
+</html>
